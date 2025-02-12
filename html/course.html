@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="../icons/sala_computer.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/course.css">
+    <title>Course</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-1 fw-bold" href="../index.html"> <i class="bi bi-pc-display-horizontal"></i> Sala Computer
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse align-items-center" id="navbarNav">
+                <ul class="navbar-nav fs-5 fw-bold me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="../index.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="../html/course.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="../html/teacher.html">Professor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#contact">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="icon pb-3 pt-3 me-5">
+                    <div class="notification me-2">
+                        <a href="#" class="btn-primary text-light"><i id="notificationIcon" class="bi bi-bell"></i></a>
+                        <span id="notificationCount" class="text-light bg-danger"></span>
+                        <div id="notificationDropdown" class="notification-dropdown">
+                            <ul class="notification-menu">
+                                <li class="notification-item">
+                                    <i class="fas fa-envelope mt-1"></i>
+                                    <div>
+                                        <div class="notification-title fw-bold"><img class="me-1" src="../icons/green_icon.png" alt=""></span>New Message</div>
+                                        <p>From John Doe want to learn Frontend Development</p>
+                                    </div>
+                                </li>
+                                <li class="notification-item">
+                                    <i class="fas fa-envelope mt-1"></i>
+                                    <div>
+                                        <span class="notification-title fw-bold"><img class="me-1" src="../icons/green_icon.png" alt="">New Message</span><br>
+                                        Jane Smith sent you a Web Development request
+                                    </div>
+                                </li>
+                                <li class="notification-item">
+                                    <i class="fas fa-envelope mt-1"></i>
+                                    <div>
+                                        <span class="notification-title fw-bold"><img class="me-1" src="../icons/green_icon.png" alt="">New Message</span>
+                                        <p>From David want to learn App Development</p>
+                                    </div>
+                                </li>
+                                <li class="notification-item">
+                                    <i class="fas fa-envelope mt-1"></i>
+                                    <div>
+                                        <span class="notification-title fw-bold"><img class="me-1" src="../icons/green_icon.png" alt="">New Message</span>
+                                        <p>From Thomas want to learn Fullstack Development</p>
+                                    </div>
+                                </li>
+                                <li class="notification-item">
+                                    <i class="fas fa-envelope mt-1"></i>
+                                    <div>
+                                        <span class="notification-title fw-bold"><img class="me-1" src="../icons/green_icon.png" alt="">New Message</span>
+                                        <p>From Robert want to learn Backend Development</p>
+                                    </div>
+                                </li>
+                                <li class="notification-item">
+                                    <i class="fas fa-envelope mt-1"></i>
+                                    <div>
+                                        <span class="notification-title fw-bold"><img class="me-1" src="../icons/green_icon.png" alt="">New Message</span>
+                                        <p>From William want to learn Web Development</p>
+                                    </div>
+                                </li>
+                                <li class="notification-item">
+                                    <i class="fas fa-envelope mt-1"></i>
+                                    <div>
+                                        <span class="notification-title fw-bold"><img class="me-1" src="../icons/green_icon.png" alt="">New Message</span>
+                                        <p>From Anthony want to learn Mobile App Development</p>
+                                    </div>
+                                </li>
+                                <li class="notification-item">
+                                    <i class="fas fa-envelope mt-1"></i>
+                                    <div>
+                                        <span class="notification-title fw-bold"><img class="me-1" src="../icons/green_icon.png" alt="">New Message</span>
+                                        <p>From Paul want to learn Syber Security Development</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="../html/register.html" class="btn-primary text-light me-2"><i class="bi bi-person-plus"></i></a>
+                    <a href="../html/login.html" class="btn-primary text-light"><i class="bi bi-person-circle"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="course" class="container">
+
+        <h1 class="text-center fw-bold text-danger">Wellcome to our Course</h1>
+
+        <h1 class="text-center fw-bold text-primary mb-5">All Courses</h1>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div id="web_design" class="card course-card">
+                    <img role="button" tabindex="0" src="../src/grapic.jpg" height="300px" class="card-img-top"
+                        alt="Graphic Design">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fs-2 mt-3 mb-5 fw-bold">Graphic Design</h5>
+                        <div class="star_center d-flex justify-content-around mb-3 fs-5">
+                            <p class="card-text">⭐⭐⭐⭐⭐</p>
+                            <p>150 Review</p>
+                        </div>
+                        <div class="d-flex justify-content-around fs-5">
+                            <p class="card-text"><i class="bi bi-person fs-3" role="button" tabindex="0"></i> 562 <i
+                                    class="bi bi-heart fs-4 ms-3" role="button" tabindex="0"></i> 562</p>
+                            <p class="mt-2">Free</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id="" class="card course-card">
+                    <img role="button" tabindex="0" src="../src/web_development.jpg" height="300px" class="card-img-top"
+                        alt="Web Development">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fs-2 mt-3 mb-5 fw-bold">Web Development</h5>
+                        <div class="star_center d-flex justify-content-around mb-3 fs-5">
+                            <p class="card-text">⭐⭐⭐⭐⭐</p>
+                            <p>520 Review</p>
+                        </div>
+                        <div class="d-flex justify-content-around fs-5">
+                            <p class="card-text"><i class="bi bi-person fs-3" role="button" tabindex="0"></i> 1250 <i
+                                    class="bi bi-heart fs-4 ms-3" role="button" tabindex="0"></i> 2000</p>
+                            <p class="mt-2">Free</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id="" class="card course-card">
+                    <img role="button" tabindex="0" src="../src/frontend.jpg" height="300px" class="card-img-top"
+                        alt="">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fs-2 mt-3 mb-5 fw-bold">Frontend Development</h5>
+                        <div class="star_center d-flex justify-content-around mb-3 fs-5">
+                            <p class="card-text">⭐⭐⭐⭐⭐</p>
+                            <p>200 Review</p>
+                        </div>
+                        <div class="d-flex justify-content-around fs-5">
+                            <p class="card-text"><i class="bi bi-person fs-3" role="button" tabindex="0"></i> 300 <i
+                                    class="bi bi-heart fs-4 ms-3" role="button" tabindex="0"></i> 500</p>
+                            <p class="mt-2">Free</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id="" class="card course-card">
+                    <img role="button" tabindex="0" src="../src/fullstack.png" height="300px" class="card-img-top"
+                        alt="">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fs-2 mt-3 mb-5 fw-bold">Fullstack Development</h5>
+                        <div class="star_center d-flex justify-content-around mb-3 fs-5">
+                            <p class="card-text">⭐⭐⭐⭐⭐</p>
+                            <p>150 Review</p>
+                        </div>
+                        <div class="d-flex justify-content-around fs-5">
+                            <p class="card-text"><i class="bi bi-person fs-3" role="button" tabindex="0"></i> 350 <i
+                                    class="bi bi-heart fs-4 ms-3" role="button" tabindex="0"></i> 600</p>
+                            <p class="mt-2">Free</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id="" class="card course-card">
+                    <img role="button" tabindex="0" src="../src/backend.jpg" height="300px" class="card-img-top"
+                        alt="">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fs-2 mt-3 mb-5 fw-bold">Backend Development</h5>
+                        <div class="star_center d-flex justify-content-around mb-3 fs-5">
+                            <p class="card-text">⭐⭐⭐⭐⭐</p>
+                            <p>200 Review</p>
+                        </div>
+                        <div class="d-flex justify-content-around fs-5">
+                            <p class="card-text"><i class="bi bi-person fs-3" role="button" tabindex="0"></i> 400 <i
+                                    class="bi bi-heart fs-4 ms-3" role="button" tabindex="0"></i> 240</p>
+                            <p class="mt-2">Free</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id="" class="card course-card">
+                    <img role="button" tabindex="0" src="../src/app.jpeg" height="300px" class="card-img-top"
+                        alt="">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fs-2 mt-3 mb-5 fw-bold">App Development</h5>
+                        <div class="star_center d-flex justify-content-around mb-3 fs-5">
+                            <p class="card-text">⭐⭐⭐⭐⭐</p>
+                            <p>140 Review</p>
+                        </div>
+                        <div class="d-flex justify-content-around fs-5">
+                            <p class="card-text"><i class="bi bi-person fs-3" role="button" tabindex="0"></i> 210 <i
+                                    id="icon" class="bi bi-heart fs-4 ms-3" role="button" tabindex="0"></i> 520</p>
+                            <p class="mt-2">Free</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id="" class="card course-card">
+                    <img role="button" tabindex="0" src="../src/networking.jpg" height="300px" class="card-img-top"
+                        alt="">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fs-2 mt-3 mb-5 fw-bold">Networking</h5>
+                        <div class="star_center d-flex justify-content-around mb-3 fs-5">
+                            <p class="card-text">⭐⭐⭐⭐⭐</p>
+                            <p>195 Review</p>
+                        </div>
+                        <div class="d-flex justify-content-around fs-5">
+                            <p class="card-text"><i class="bi bi-person fs-3" role="button" tabindex="0"></i> 250 <i
+                                    id="icon" class="bi bi-heart fs-4 ms-3" role="button" tabindex="0"></i> 620</p>
+                            <p class="mt-2">Free</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id="" class="card course-card">
+                    <img role="button" tabindex="0" src="../src/mobileapp.jpg" height="300px" class="card-img-top"
+                        alt="">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fs-2 mt-3 mb-5 fw-bold">Mobile App Development</h5>
+                        <div class="star_center d-flex justify-content-around mb-3 fs-5">
+                            <p class="card-text">⭐⭐⭐⭐⭐</p>
+                            <p>260 Review</p>
+                        </div>
+                        <div class="d-flex justify-content-around fs-5">
+                            <p class="card-text"><i class="bi bi-person fs-3" role="button" tabindex="0"></i> 520 <i
+                                    id="icon" class="bi bi-heart fs-4 ms-3" role="button" tabindex="0"></i> 700</p>
+                            <p class="mt-2">Free</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id="" class="card course-card">
+                    <img role="button" tabindex="0" src="../src/sybersecurity.jpg" height="300px" class="card-img-top"
+                        alt="">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fs-2 mt-3 mb-5 fw-bold">Syber Security</h5>
+                        <div class="star_center d-flex justify-content-around mb-3 fs-5">
+                            <p class="card-text">⭐⭐⭐⭐⭐</p>
+                            <p>340 Review</p>
+                        </div>
+                        <div class="d-flex justify-content-around fs-5">
+                            <p class="card-text"><i class="bi bi-person fs-3" role="button" tabindex="0"></i> 470 <i
+                                    id="icon" class="bi bi-heart fs-4 ms-3" role="button" tabindex="0"></i> 730</p>
+                            <p class="mt-2">Free</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer id="contact" class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="mb-4">Contact Us</h5>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/1L2FHxND84/" class="social-icon bg-primary"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://t.me/Vatana009" class="social-icon bg-info"><i class="fab fa-telegram"></i></a>
+                        <a href="https://www.tiktok.com/@na.alex143" class="social-icon bg-secondary"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://youtube.com/@vtn009" class="social-icon bg-danger"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="../index.html" class="footer-link">Home</a></li>
+                        <li class="mb-2"><a href="../index.html" class="footer-link">About</a></li>
+                        <li class="mb-2"><a href="../html/course.html" class="footer-link">Course</a></li>
+                        <li class="mb-2"><a href="../html/teacher.html" class="footer-link">Professor</a></li>
+                        <li class="mb-2"><a href="#contact" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="mb-4">Courses</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="../html/course.html" class="footer-link">Grapic Design</a></li>
+                        <li class="mb-2"><a href="../html/course.html" class="footer-link">Web Development</a></li>
+                        <li class="mb-2"><a href="../html/course.html" class="footer-link">Frontend Developer</a></li>
+                        <li class="mb-2"><a href="../html/course.html" class="footer-link">Fullstack Development</a></li>
+                        <li class="mb-2"><a href="../html/course.html" class="footer-link">backend Development</a></li>
+                        <li class="mb-2"><a href="../html/course.html" class="footer-link">App Development</a></li>
+                        <li class="mb-2"><a href="../html/course.html" class="footer-link">Mobile App Development</a></li>
+                        <li class="mb-2"><a href="../html/course.html" class="footer-link">Syber Security</a></li>
+                        <li class="mb-2"><a href="../html/course.html" class="footer-link">Networking</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="mb-4">Contact Info</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <i class="fas fa-map-marker-alt me-2"></i>
+                            <a href="" class="footer-link">Kompong Leng, Kompong Chhnang, Cambodia</a>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-phone me-2"></i>
+                            <a href="" class="footer-link">+855 715 831 867</a>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-envelope me-2"></i>
+                            <a href="vtnvatana009@example.com" class="footer-link">vtnvatana009@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12">
+                    <hr class="mb-4">
+                    <div class="text-center">
+                        <p class="mb-0">&copy; 2024 <a class="text-decoration-none text-secondary" href="">Vatana Coding II</a>. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $(document).ready(function() {
+            $("#notificationIcon").click(function() {
+                $("#notificationDropdown").toggle();
+            });
+
+            let count = "9+";
+            $("#notificationCount").text(count);
+        });
+    </script>
+    <script src="../bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

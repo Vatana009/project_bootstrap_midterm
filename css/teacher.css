@@ -1,0 +1,28 @@
+#teacher h1 {
+    color: #2c2c97;
+}
+
+.btn {
+    position: relative;
+    width: 150px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    background: linear-gradient(to left, #2c2c97 50%, #3e3eeb 50%);
+    background-size: 200% 100%;
+    background-position: right;
+    transition: background-position 0.3s ease-in-out, color 0.3s;
+}
+
+.btn:hover {
+    background-position: left;
+    color: white;
+}
+
+#teacher {
+    margin-top: 100px;
+}
+
+.col-md-4 img {
+    height: 450px;
+}
